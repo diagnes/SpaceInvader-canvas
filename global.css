@@ -1,0 +1,45 @@
+html,body{
+    overflow: hidden;
+}
+
+html *{
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0,.2);
+}
+canvas{
+    margin:auto;
+    display: block;
+    border: 1px solid black;
+}
+
+#spaceInvader canvas{
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('image/welcome.gif');
+}
+
+#spaceInvader.onPlay canvas{
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('image/space.gif');
+}
+
+#spaceInvader.win canvas{
+  background-image: url('image/win.gif');
+}
+#spaceInvader.loose canvas{
+  background-image: url('image/loose.gif');
+}
